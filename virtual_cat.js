@@ -22,18 +22,16 @@ const userInfo = document.getElementById("userInfo");
 const catInfo = document.getElementById("catInfo");
 const noCat = document.getElementById("noCat");
 const feedCat = document.getElementById("feedCat");
+const hungryCat = document.getElementById("hungry");
 
 end.classList.add("hidden");
 adopting.classList.add("hidden");
 feedCat.classList.add("hidden");
 const catArray = [];
-console.log(main);
 
 feedCat.addEventListener("click", () => {
   alert("Cat is fed");
 });
-
-console.log("testing");
 
 const validInputLength = (input, min) => {
   if (input.value.trim().length >= min) {
@@ -100,8 +98,9 @@ formEl.addEventListener("submit", function (e) {
         userInfo.innerHTML = `Congrats ${userName}! You've adopted ${catArray[0].name}`;
         catInfo.appendChild(catImage);
         setTimeout(function () {
+          hungryCat.innerHTML = `${catArray[0].name} is hungry`;
           feedCat.classList.remove("hidden");
-        }, 2000);
+        }, 2500);
       });
     }
     noButton.addEventListener("click", () => {
