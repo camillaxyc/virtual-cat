@@ -23,6 +23,7 @@ const catInfo = document.getElementById("catInfo");
 const noCat = document.getElementById("noCat");
 const feedCat = document.getElementById("feedCat");
 const hungryCat = document.getElementById("hungry");
+const dance = document.getElementById("dance");
 
 end.classList.add("hidden");
 adopting.classList.add("hidden");
@@ -97,6 +98,9 @@ formEl.addEventListener("submit", function (e) {
         end.classList.remove("hidden");
         userInfo.innerHTML = `Congrats ${userName}! You've adopted ${catArray[0].name}`;
         catInfo.appendChild(catImage);
+        dance.addEventListener("click", () => {
+          catImage.style.transform += "rotate(" + (60 % 360) + "deg)";
+        });
         setTimeout(function () {
           hungryCat.innerHTML = `${catArray[0].name} is hungry`;
           feedCat.classList.remove("hidden");
