@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catto Adopto</title>
+    <link rel="stylesheet" href="virtual_cat.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Cat Adopt🐈</h1>
+    </header>
+
+    <main>
+      <div id="intro">
+        <p>Hello there! 🐱</p>
+        <p>Please fill out the information before you start adopting cats</p>
+
+        <form id="userForm">
+          <label for="name">Name</label>
+          <input type="text" id="userName" name="name" required />
+
+          <label for="number">How many cats would you like to adopt?</label>
+          <input type="number" id="numofCat" name="number" required />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="adopting">
+        <div id="yNbuttonGroup">
+          <button id="yesButton">Yes</button>
+          <button id="noButton">No</button>
+        </div>
+        <form id="catForm">
+          <label for="name">Cat Name</label>
+          <input type="text" id="catName" name="name" required />
+        </form>
+      </div>
+      <div id="end">
+        <div id="userInfo"></div>
+        <div id="catInfo"></div>
+        <button id="feedCat">Feed Cat</button>
+      </div>
+      <div id="noCat"></div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Camilla</p>
+    </footer>
+    <script src="api-key.js"></script>
+    <script src="virtual_cat.js"></script>
+  </body>
+</html>

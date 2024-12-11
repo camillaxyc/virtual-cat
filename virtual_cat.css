@@ -1,0 +1,69 @@
+body {
+  background-color: pink;
+  font-family: "Montserrat", sans-serif;
+  padding: 8px;
+}
+
+main {
+  background-color: white;
+  border-radius: 20px;
+  padding: 16px;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-shadow: 2px 2px white;
+}
+
+#userForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#userForm input {
+  width: 200px;
+  margin: 10px;
+}
+
+#userForm button {
+  width: 200px;
+  margin: 10px;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+  height: 0px;
+}
+
+#adopting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.invalid {
+  border: 1px solid red;
+  background-color: #ffdddd;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:valid {
+  border: 1px solid green;
+}
+
+#yNbuttonGroup {
+  margin: 16px;
+}
+
+#yNbuttonGroup button {
+  width: 160px;
+  height: 40px;
+  margin: 8px;
+}
